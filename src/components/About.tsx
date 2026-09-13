@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import { useState } from "react";import { useNavigate } from "react-router";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { create } from "zustand";
@@ -126,7 +125,7 @@ function Users() {
   const [editOpen, setEditOpen] = useState(false);
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
 
-  
+
   const handleSelect = (id: number) => {
   setSelectedIds((prev) =>
     prev.includes(id)
